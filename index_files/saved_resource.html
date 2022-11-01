@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Ad delivery system</title>
+		<link rel="stylesheet" type="text/css" href="https://static.trafficjunky.com/delivery/css/responsive_ads.css">
+	</head>
+	<body style="background-color:transparent;" marginwidth="0" marginheight="0">
+		<iframe id="2184351_1667272151" src="about:blank" style="width:100%; height:auto; border:none;" scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+		<div id="dummy_2184351_1667272151" contenteditable="" tabindex="-1" style="display:none"></div>
+<script>
+	var iframe = document.getElementById('2184351_1667272151'); 
+	var clickurls = ['https://ads.trafficjunky.net/deep_click?adtype=iframe&h=b4ee36d3d32b722eb65a71a689fa4cbfc80ab299&url=&info=CiAxN2JlOTIxNThmMzA0NmM1YTI4NjhmZjExZjlkNTE5NBDXm4KbBhoiMTdiZTkyMTU4ZjMwNDZjNWEyODY4ZmYxMWY5ZDUxOTQtMjCfqYUBOJ%2BphQFIn47E3gNSATJY7jRgAWooNzBiNGE5MDdjZjM3ZmRlZjhiNWYyMDAxODM2Y2I1YWZjZjBlNDFkMHIkYTY2MmIxM2EtOGI0NS00YzdhLThjMWEtZWQ2MDZmOGEzMTE3eAGBAWkdVU0QdS8%2FiQG4HoXrUbjOP5IBAlVTmgECQ0GiAQhWYW4gTnV5c6oBBnBoc2tpbsoBCHNwZWN0cnVt0gEEd2lmadoBBW1hY29z4gEOMTA0LjM0LjE5NS4yMzj6AQ4xMDQuMzQuMTk1LjIzOIICDHRqZGVsaXZlcnkyMpICBmNocm9tZZoCBTkxNDA1qgIHMTAuMTUuN7ICAzEwNboCKDQ3N2EwZmY1ZjY0Mjg2MGY5ZDNhN2IyNDQ4ZDMxNDE3OThiNmNkYmHYAgHgAgHoAgHyAiRhYjZmZWI2Yi1kODBkLWEwNDctMGEyNi05OTZjZjQwZjhiZTT6AgExggMCe32SAwdkZXNrdG9wmgMCZW6iAxcKC2NvbnRleHRfdGFnEggSBnBoc2tpbqIDGwoRY29udGV4dF9wYWdlX3R5cGUSBhIEaG9tZaIDEQoEc2l0ZRIJEgdwb3JuaHVisgMGQ2hyb21lwgMEaG9tZcoDJGYxZDk4NjA0LWE2NDgtNDg1OS1iNjJlLTBhZWRhNWMzYjFhNdIDKDFmNzg0YzVmYmI0YjgxZDY0YzdjMWVhZDJlMzdjYTIxMjAyYTI0ZjDYAwE%3D&x=1'];
+	var locked = undefined;
+	var max = 1;
+	var counter = 1;
+	var monitor = setInterval(function(){
+		var elem = document.activeElement;
+		if(elem && elem === iframe && !locked) {
+			locked = true;
+			clickOnFocus();
+			counter = counter + 1;
+			if(counter > max) {
+				clearInterval(monitor);
+			}
+	}
+	}, 100);
+
+	var xhrCounter = 0;
+
+	function xhrDone() {
+		xhrCounter--;
+
+		if (xhrCounter > 0) {
+			return;
+		}
+
+		locked = undefined;
+	}
+
+	function newXhr(method, url) {
+		var xhr = new XMLHttpRequest();
+
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState !== 4) {
+				return;
+			}
+
+			xhrDone();
+		};
+
+		try {
+			xhr.open(method, url, true);
+			xhr.send(null);
+		} catch (ex) {
+			xhrDone();
+		}
+	}
+
+	function clickOnFocus() {
+		var elem = document.activeElement;
+		if (elem && elem === document.getElementById('2184351_1667272151')) {
+			var dummy = document.getElementById("dummy_2184351_1667272151");
+			if (dummy.setActive) {
+				dummy.style.display = 'block'; //IE / Edge
+				dummy.setActive();
+			} else {
+				dummy.style.display = 'initial';
+				dummy.focus(); // All other browsers
+			}
+			dummy.style.display = 'none';
+
+			xhrCounter = clickurls.length;
+			length = clickurls.length;
+
+			for (i = 0; i < length; i++) {
+				newXhr('GET', clickurls[i])
+			}
+		}
+	}    
+</script>
+		<script>
+			var d = atob('PGEgaHJlZj0iaHR0cHM6Ly9ldS1hZHNydi5ydGJzdXBlcmh1Yi5jb20vY2xpY2svP3N1YlB1Ymxpc2hlcj1iYW5uZXI6d3d3LnBvcm5odWIuY29tJnpvbmU9YmFubmVyOnd3dy5wb3JuaHViLmNvbSZhZGZvcm1hdD1iYW5uZXImYXVjdGlvbmlkPTE3YmU5MjE1OGYzMDQ2YzVhMjg2OGZmMTFmOWQ1MTk0JnVuaXF1ZWlkPWE0YzM1ZTA1NTBlMjUyZjIxNjA1MjhkNDlkODY0MmEzJm5hbWU9VHJhZmZpY2p1bmt5X2Jhbm5lcl8zMDB4MjUwX3VzYV9kZXNrdG9wXyZ3aWR0aD0zMDAmaGVpZ2h0PTI1MCZuZXdzZXJ2aWNlPXRydWUmY21zaWQ9bGFuZGluZy0tam1jNjEwMC0tbGFuZGluZy0tZGE2MDE2JnRwY2FtcGlkPTNjODRmNWU1LTA2YjctNGVjNC1hNThjLWRhNDZmMTEyYzJiNiZpbXBfdGFnaWQ9MjE4NDM1MSZiYT1mMWQ5ODYwNC1hNjQ4LTQ4NTktYjYyZS0wYWVkYTVjM2IxYTUmdWlkPUlWRy1hODkwMDZkZGI5M2JlOGMwNzUwOTNkMTcyYTEyODBjZCZjYW1wYWlnbl9scD0yOmxhbmRpbmctLWptYzYxMDAtLWxhbmRpbmctLWRhNjAxNiZwcm9kdWN0PWZldG9vd2ViIiB0YXJnZXQ9Il9ibGFuayI+CiAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9ibWVkaWEuanVzdHNlcnZpbmdmaWxlcy5uZXQvNzA2YWJmMGItYjUxOC00ODE1LWI1MDMtZGE5YTM2ODI4ZDljLmpwZyIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNTAiIC8+CiAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9jZi1hZHNydi5ydGJzdXBlcmh1Yi5jb20vdGpjYWxsL3VzLz9pZD1hNjYyYjEzYThiNDU0YzdhOGMxYWVkNjA2ZjhhMzExNyIgd2lkaHQ9IjEiIGhlaWdodD0iMSIgLz4KICAgICAgICA8L2E+');
+			var iframe = document.getElementById('2184351_1667272151'); 
+			iframe.onload = function () {
+ 				if (iframe.contentWindow) {
+ 					iframe.contentWindow.document.body.innerHTML = d;
+ 				}
+ 			};
+    		if (iframe.contentWindow) {
+ 				iframe.contentWindow.document.body.innerHTML = d;
+ 			}		
+		</script>
+
+		<img src="https://ads.trafficjunky.net/deep_pixel?adtype=iframe&amp;h=b4ee36d3d32b722eb65a71a689fa4cbfc80ab299&amp;url=&amp;info=CiAxN2JlOTIxNThmMzA0NmM1YTI4NjhmZjExZjlkNTE5NBDXm4KbBhoiMTdiZTkyMTU4ZjMwNDZjNWEyODY4ZmYxMWY5ZDUxOTQtMjCfqYUBOJ%2BphQFIn47E3gNSATJY7jRgAWooNzBiNGE5MDdjZjM3ZmRlZjhiNWYyMDAxODM2Y2I1YWZjZjBlNDFkMHIkYTY2MmIxM2EtOGI0NS00YzdhLThjMWEtZWQ2MDZmOGEzMTE3eAGBAWkdVU0QdS8%2FiQG4HoXrUbjOP5IBAlVTmgECQ0GiAQhWYW4gTnV5c6oBBnBoc2tpbsoBCHNwZWN0cnVt0gEEd2lmadoBBW1hY29z4gEOMTA0LjM0LjE5NS4yMzj6AQ4xMDQuMzQuMTk1LjIzOIICDHRqZGVsaXZlcnkyMpICBmNocm9tZZoCBTkxNDA1qgIHMTAuMTUuN7ICAzEwNboCKDQ3N2EwZmY1ZjY0Mjg2MGY5ZDNhN2IyNDQ4ZDMxNDE3OThiNmNkYmHYAgHgAgHoAgHyAiRhYjZmZWI2Yi1kODBkLWEwNDctMGEyNi05OTZjZjQwZjhiZTT6AgExggMCe32SAwdkZXNrdG9wmgMCZW6iAxEKBHNpdGUSCRIHcG9ybmh1YqIDFwoLY29udGV4dF90YWcSCBIGcGhza2luogMbChFjb250ZXh0X3BhZ2VfdHlwZRIGEgRob21lsgMGQ2hyb21lwgMEaG9tZcoDJGYxZDk4NjA0LWE2NDgtNDg1OS1iNjJlLTBhZWRhNWMzYjFhNdIDKDFmNzg0YzVmYmI0YjgxZDY0YzdjMWVhZDJlMzdjYTIxMjAyYTI0ZjDYAwE%3D&amp;x=1" width="1" height="1" style="display:none;">
+		<img src="https://bmedia.justservingfiles.net/706abf0b-b518-4815-b503-da9a36828d9c.jpg" width="1" height="1" style="display:none;">
+		
+	<div style="display:block;height:15px;position:fixed;right:0;top:0;width:15px;"><a href="https://www.pornhub.com/information/advertising" target="_blank"><div style="background-image:url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsSAAALEgHS3X78AAACeElEQVRIiWPUmrv5P8MAABZ8VhZpKKDw+248oJoL8VqcbKVDM4uZqGbSULEYb1CTA8x5uRkMRAUYvvz6w7DrxRuG13/+Em9xtIw4g7u6PIb4ImcznE5Zd+UuAzcrC0OVmylcLPjFe4b0XSewWo7VYnEeTgZjeTEMcWxiMDD11FWGclsDFDF1CUEGNwkRhqVPXmKop1oc3/v+g0FakAdDHOQJbIBqFlsLCzCcfYjps6NPX2NVjzWotzx8znDx1XuGSQG2KOJ5Gw7jtPjx9x8MR09cZmgER4k4w9P3XxjWXrrDcPLzV+ItvvX9Jxijg73vPuK0GATUONkZdt1+zFB/4jKDEicHgyQXB061VM1OspwcDK3elnD+2YevGDa8fItV7cgruUiyWJSFmT4Wf/n5G4UfJCdBNcfgtfjg7Sco/DwHQ4Z0JWlw6gWVyfX6qgxbwl3AbFIB3lS9884TBm8dRQzL89DUTfKzYcjbdIR6Pgbl21VnbxI0hIedFWw5FwnBTjBxNV68TdByUFpo33OG4RuOKhAbIKoAAVl+5PErBncVGQZ7VRmwD0Hg6fuvDEfvPWFYfusRuKRDb6NRbDEDNNj3nvrIwHDqKlZ5UOr20ERNDxeevsJpHskFCCglo6dikKUz3SwYpAVRxXHVTAykltVdZtrgVB5mrM5w88V7hotPXzEoiwhibSCAymlcNRNJFsMshQFQ6wKEsQFQYms5dhGveURb/PXnL6LUgRJc7Z5TWKtVsiwGpeyLL94xZFnpYcQlA9SXK8/eZFh85zHOliUyIKvvBEpcKvw84PbU11+/Ge58+EKwkYAOyGoIgBINvoRDEDAwMAAA8jPdWcn5JXoAAAAASUVORK5CYII=&quot;);background-position:-15px 0;background-size:cover;box-shadow:0 0 3px #333;cursor:pointer;height:15px;position:absolute;right:0;top:0;width:15px;" class="tj-inban-icon"><div style="background:#299cb2;color:#fff;display:block;font-family:sans-serif;font-size:10px;height:15px;line-height:15px;padding:0;position:absolute;text-align:center;top:0;transition:left 1s;width:100px;z-index:-1;" class="tj-inban-tooltip">Ads by TrafficJunky</div></div></a><style>
+			.tj-inban-tooltip {
+				left: 15px;
+			}
+			
+			.tj-inban-icon:hover .tj-inban-tooltip {
+				left: -99px;
+			}
+		</style></div></body></html>
